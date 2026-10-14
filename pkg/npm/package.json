@@ -1,7 +1,7 @@
 {
-  "name": "@saga-it/mirthsync",
-  "version": "3.8.0",
-  "description": "DevOps tool for Mirth Connect and Open Integration Engine version control and CI/CD automation",
+  "name": "@dave-inthecloud/mirthsync",
+  "version": "3.8.1",
+  "description": "DevOps tool for Mirth Connect and Open Integration Engine version control and CI/CD automation (fork of @saga-it/mirthsync with the orphan-check performance fix)",
   "keywords": [
     "mirth",
     "mirth-connect",
@@ -16,15 +16,15 @@
     "version-control",
     "integration-engine"
   ],
-  "homepage": "https://saga-it.com/products/mirthsync",
+  "homepage": "https://github.com/dave-InTheCloud/mirthsync#readme",
   "bugs": {
-    "url": "https://github.com/SagaHealthcareIT/mirthsync/issues"
+    "url": "https://github.com/dave-InTheCloud/mirthsync/issues"
   },
   "license": "EPL-1.0",
   "author": "Saga IT LLC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SagaHealthcareIT/mirthsync.git"
+    "url": "git+https://github.com/dave-InTheCloud/mirthsync.git"
   },
   "bin": {
     "mirthsync": "bin/mirthsync.js"
@@ -42,5 +42,8 @@
     "linux",
     "win32"
   ],
-  "preferGlobal": true
+  "preferGlobal": true,
+  "contributors": [
+    "dave-InTheCloud (https://github.com/dave-InTheCloud)"
+  ]
 }

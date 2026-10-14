@@ -133,8 +133,8 @@ function main() {
   if (!fs.existsSync(jarPath)) {
     console.error(`Error: mirthsync JAR file not found at ${jarPath}`);
     console.error('This may indicate a corrupted installation. Try reinstalling:');
-    console.error('  npm uninstall -g @saga-it/mirthsync');
-    console.error('  npm install -g @saga-it/mirthsync');
+    console.error('  npm uninstall -g @dave-inthecloud/mirthsync');
+    console.error('  npm install -g @dave-inthecloud/mirthsync');
     process.exit(1);
   }
 

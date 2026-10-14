@@ -1,11 +1,17 @@
-# @saga-it/mirthsync
+# @dave-inthecloud/mirthsync
 
 DevOps tool for Mirth Connect and Open Integration Engine version control and CI/CD automation.
+
+> **Fork notice:** this is a fork of [@saga-it/mirthsync](https://www.npmjs.com/package/@saga-it/mirthsync)
+> by Saga IT. It adds the orphan-check performance fix proposed upstream in
+> [SagaHealthcareIT/mirthsync#97](https://github.com/SagaHealthcareIT/mirthsync/pull/97)
+> (`pull` with a few hundred channels goes from minutes to seconds). Once that fix is
+> released upstream, switch back to `@saga-it/mirthsync`.
 
 ## Installation
 
 ```bash
-npm install -g @saga-it/mirthsync
+npm install -g @dave-inthecloud/mirthsync
 ```
 
 ## Prerequisites

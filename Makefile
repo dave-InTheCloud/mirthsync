@@ -1,4 +1,4 @@
-VERSION := 3.8.0
+VERSION := 3.8.1
 NPM_VERSION := $(VERSION)
 
 default:
@@ -22,12 +22,12 @@ npm-pack: npm-prepare
 	@echo "Creating npm package tarball..."
 	cd pkg/npm && npm pack
 	mv pkg/npm/*.tgz target/
-	@echo "Package created: target/saga-it-mirthsync-$(NPM_VERSION).tgz"
+	@echo "Package created: target/dave-inthecloud-mirthsync-$(NPM_VERSION).tgz"
 
 # Test npm package locally (install globally from tarball)
 npm-test-install: npm-pack
 	@echo "Installing npm package globally for testing..."
-	npm install -g target/saga-it-mirthsync-$(NPM_VERSION).tgz
+	npm install -g target/dave-inthecloud-mirthsync-$(NPM_VERSION).tgz
 	@echo "Testing mirthsync command..."
 	mirthsync -h
 
@@ -35,7 +35,7 @@ npm-test-install: npm-pack
 npm-publish: npm-prepare
 	@echo "Publishing to npm..."
 	cd pkg/npm && npm publish --access public
-	@echo "Published @saga-it/mirthsync@$(NPM_VERSION) to npm"
+	@echo "Published @dave-inthecloud/mirthsync@$(NPM_VERSION) to npm"
 
 # Clean npm artifacts
 npm-clean:
